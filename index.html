@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Masala Muse</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1 class="logo"><i class='bx bx-bowl-hot'></i> Masala Muse</h1>
+            <p class="subtitle">Your Personal Collection of Delicious Recipes</p>
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <!-- <li><a href="#">Search Recipes</a></li> -->
+                <li><a href="#add-tab">Add Recipe</a></li>
+                <li><a href="#recipes">View Recipes</a></li>
+                <li><a href="#contact">Contact Us!</a></li>
+            </ul>
+    </header>
+
+    <section class="hero">
+        <div class="hero-container">
+            <h2>Welcome to Masala Muse</h2>
+            <p>Your go-to place for exploring and sharing delicious recipes.</p>
+        </div>
+       <form  action="#" class="search-form">
+            <input type="text" placeholder="Search for recipes..." aria-label="Search Recipes">
+            <button type="submit">Search</button>
+        </form>
+    
+    </section>
+
+ <section class="about" id="about">
+        <div class="floating-spice"></div>
+        <div class="floating-spice"></div>
+        <div class="floating-spice"></div>
+        
+        <div class="img-abt">
+            <img src="./pexels-zvolskiy-4108278.jpg" alt="Recipe Development">
+        </div>
+        
+        <div class="abt-text">
+            <h2>About Us</h2>
+            <p>Masala Muse is a community-driven platform where food enthusiasts can share, discover, and enjoy a wide variety of recipes. Whether you're looking for traditional dishes or modern twists, we have something for everyone.</p>
+            
+            <div class="stats">
+                <div class="stat-item">
+                    <span class="stat-number">5K+</span>
+                    <span class="stat-label">Recipes</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">25K+</span>
+                    <span class="stat-label">Users</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">50+</span>
+                    <span class="stat-label">Countries</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="recipes" id="recipes">
+    <h1> START WITH SOME FLAVOURFULL RECIPES...</h1>
+        <div class="recipe-container">
+            <div class="recipe-card">
+                <img src="./Prawns-Masala-min.jpg" alt="Recipe 1">
+                <h3>Prawns Masala</h3>
+                <p>A flavorful Prawns curry with a blend of spices.</p>
+                <a href="#">View Recipe</a>
+            </div>
+            <div class="recipe-card">
+                <img src="./easy-vegetable-biryani.jpg" alt="Recipe 2">
+                <h3>Vegetable Biryani</h3>
+                <p>Aromatic rice dish with mixed vegetables and spices.</p>
+                <a href="#">View Recipe</a>
+            </div>
+            <div class="recipe-card">
+                <img src="./kosambari-recipe-1-1.webp" alt="Recipe 3">
+                <h3>Kosambari</h3>
+                <p>Hearty soup made with lentils and fresh herbs.</p>
+                <a href="#">View Recipe</a>
+            </div>
+            <div class="recipe-card">
+                <img src="./Dahi_Ke_Kebab_Recipe_Greek_Yogurt_Kebabs_Mughlai_Cuisine__1.jpg" alt="Recipe 3">
+                <h3>Dahi Ke Kebab</h3>
+                <p>Hearty soup made with lentils and fresh herbs.</p>
+                <a href="#">View Recipe</a>
+            </div>
+            <div class="recipe-card">
+                <img src="./Carrot_Beans_Thoran_Kerala_Recipe_Vegetables_Healthy_Food-2.jpg" alt="Recipe 3">
+                <h3>Thoran</h3>
+                <p>Hearty soup made with lentils and fresh herbs.</p>
+                <a href="#">View Recipe</a>
+            </div>
+            <div class="recipe-card">
+                <img src="./How-to-make-Bhutte-ke-kebab-19.jpg" alt="Recipe 3">
+                <h3>Bhutte Ke Kebab</h3>
+                <p>Hearty soup made with lentils and fresh herbs.</p>
+                <a href="#">View Recipe</a>
+            </div>
+            <div class="recipe-card">
+                <img src="./merlin_169211805_227972c0-43d1-4f25-9643-9568331d8adb-mediumSquareAt3X.jpg" alt="Recipe 3">
+                <h3>Egg Curry</h3>
+                <p>Hearty soup made with lentils and fresh herbs.</p>
+                <a href="#">View Recipe</a>
+            </div>
+            <div class="recipe-card">
+                <img src="./Chicken-Chettinad-Curry-2-3.jpg" alt="Recipe 3">
+                <h3>Chicken Chettinad</h3>
+                <p>Hearty soup made with lentils and fresh herbs.</p>
+                <a href="#">View Recipe</a>
+            </div>
+            <div class="recipe-card">
+                <img src="./IMG_4409-edited.jpg" alt="Recipe 3">
+                <h3>Fish Curry</h3>
+                <p>Hearty soup made with lentils and fresh herbs.</p>
+                <a href="#">View Recipe</a>
+            </div>
+        </div>
+    </section>
+
+     <div id="add-tab" class="tab-content active">
+            <h2>Add New Recipe</h2>
+            <div id="add-error" class="error-message"></div>
+            <div id="add-success" class="success-message"></div>
+            
+            <form id="recipe-form">
+                <div class="form-group">
+                    <label for="recipe-name">Recipe Name *</label>
+                    <input type="text" id="recipe-name" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="recipe-ingredients">Ingredients *</label>
+                    <textarea id="recipe-ingredients" placeholder="List each ingredient on a new line..." required></textarea>
+                </div>
+                
+                <div class="form-group">
+                    <label for="recipe-steps">Preparation Steps *</label>
+                    <textarea id="recipe-steps" placeholder="Describe the preparation steps..." required></textarea>
+                </div>
+                
+                <div class="form-group">
+                    <label for="recipe-image">Recipe Image</label>
+                    <input type="file" id="recipe-image" accept="image/*">
+                </div>
+                
+                <button type="submit" class="btn">Add Recipe</button>
+            </form>
+        </div>
+
+        <section class="contact" id="contact">
+    <div class="contact-text">
+        <h2>Contact <span>Us</span></h2>
+        <h4>Let's Work Together</h4>
+        <p>If you have any questions, want to collaborate, or just want to say hi, feel free to reach out!</p>
+        <div class="contact-list">
+            <li> <i class='bx  bx-send' ></i> masalamuse.20@gmail.com</li>
+            <li> <i class='bx bx-phone' ></i> +91 1234567890</li>
+        </div>
+        <div class="contact-icons">
+            <a href="#"><i class='bx bxl-instagram'></i></a>
+            <a href="#"><i class='bx bxl-github'></i></a>
+            <a href="#"><i class='bx bxl-whatsapp' ></i></a>
+            <a href="#"><i class='bx bxl-linkedin-square' ></i></a>
+        </div>
+    </div>
+    <div class="contact-form">
+        <form action="#" method="post">
+            <input type=""  placeholder="Your Name" required>
+            <input type="email"  placeholder="Your Email" required>
+            <input type=""  placeholder="Subject" required>
+            <textarea name="" id="" cols="40" rows="10" placeholder="enter your message"></textarea>
+           <input type="submit" value="Submit" class="">
+        </form>
+    </section>
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Masala Muse. All rights reserved.</p>
+            <p>Made with <i class='bx bx-heart'></i> by [RainySharma]</p>
+        </div>
+</body>
+</html>
